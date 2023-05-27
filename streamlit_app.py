@@ -14,6 +14,7 @@ def main():
 
     # Upload CSV file
     st.header("Upload CSV File")
+    st.write("CSV must have columns 'ID' and 'Sequence'")
     csv_file = st.file_uploader("Upload a CSV file", type=["csv"])
 
     if csv_file is not None:
