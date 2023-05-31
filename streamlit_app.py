@@ -27,6 +27,7 @@ def main():
 
         # Convert to FASTA
         st.subheader("FASTA Format")
+        st.write("Paste output from by mousing over upper right corner of results")
         fasta_output = convert_to_fasta(df)
         st.code(fasta_output, language="plaintext")
 
